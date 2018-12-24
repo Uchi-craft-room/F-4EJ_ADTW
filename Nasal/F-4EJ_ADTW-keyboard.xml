@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList>
+
+  <key n="100">
+    <name>d</name>
+    <desc>open/close Canopy</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorsystem.crewexport();</script>
+    </binding>
+  </key>
+
+ <key n="101">
+  <name>e</name>
+  <desc>Up/Down arresting hook</desc>
+  <binding>
+   <command>property-toggle</command>
+   <property>controls/gear/tailhook</property>
+  </binding>
+ </key>
+
+ <key n="360">
+  <name>PageUp</name>
+  <desc>Increase throttle or autopilot autothrottle</desc>
+  <repeatable type="bool">true</repeatable>
+  <binding>
+   <command>nasal</command>
+   <script>
+     controls.incThrottle(getprop("instrumentation/fric-knob"), 1.0)
+   </script>
+  </binding>
+  <mod-shift>
+   <desc>Look front right</desc>
+   <binding>
+    <command>property-assign</command>
+    <property>sim/current-view/goal-heading-offset-deg</property>
+    <property>sim/view/config/front-right-direction-deg</property>
+   </binding>
+  </mod-shift>
+ </key>
+
+ <key n="361">
+  <name>PageDown</name>
+  <desc>Decrease throttle or autopilot autothrottle</desc>
+  <repeatable type="bool">true</repeatable>
+  <binding>
+   <command>nasal</command>
+   <script>
+     controls.incThrottle(getprop("instrumentation/fric-knob")*(-1), 0.01)
+   </script>
+  </binding>
+  <mod-shift>
+   <desc>Look back right</desc>
+   <binding>
+    <command>property-assign</command>
+    <property>sim/current-view/goal-heading-offset-deg</property>
+    <property>sim/view/config/back-right-direction-deg</property>
+   </binding>
+  </mod-shift>
+ </key>
+
+</PropertyList>
+
+
+

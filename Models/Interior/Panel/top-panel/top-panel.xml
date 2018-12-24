@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>top-panel.ac</path>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+<!-- ************************ HUD SET ********************* -->
+
+
+  <animation>
+    <type>material</type>
+    <object-name>brt-knob</object-name>
+    <object-name>hud-switch</object-name>
+    <object-name>control-knob</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>digit</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.4 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+<!-- hud PWR -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>hud-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+    <property>sim/hud/visibility[1]</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>hud-switch</object-name>
+    <property>sim/hud/visibility[1]</property>
+    <factor>40</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> -0.055 </y-m>
+      <z-m> -0.034 </z-m>
+    </center>
+  </animation>
+
+<!-- hud DAY/NIGHT -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>hud-color</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/hud/current-color</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>hud-color</object-name>
+    <property>sim/hud/current-color</property>
+    <factor>40</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> -0.055 </y-m>
+      <z-m> -0.034 </z-m>
+    </center>
+  </animation>
+
+<!--   hud brightness   -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>brt-knob</object-name>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/hud/color/brightness</property>
+         <step>-0.1</step>
+         <min>0</min>
+         <max>1.5</max>
+         <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>brt-knob</object-name>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/hud/color/brightness</property>
+         <step>0.1</step>
+         <min>0</min>
+         <max>1.5</max>
+         <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>brt-knob</object-name>
+    <property>sim/hud/color/brightness</property>
+    <factor>100</factor>
+    <axis>
+      <x>  -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> -0.041 </y-m>
+      <z-m> -0.004 </z-m>
+    </center>
+  </animation>
+
+<!--   hud depr   -->
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>control-knob</object-name>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/hud/color/alpha</property>
+         <step>-0.1</step>
+         <min>0</min>
+         <max>1.5</max>
+         <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>control-knob</object-name>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/hud/color/alpha</property>
+         <step>0.1</step>
+         <min>0</min>
+         <max>1.5</max>
+         <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>control-knob</object-name>
+    <property>sim/hud/color/alpha</property>
+    <factor>100</factor>
+    <axis>
+      <x>  -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.075 </x-m>
+      <y-m> -0.001 </y-m>
+      <z-m> -0.005 </z-m>
+    </center>
+  </animation>
+
+</PropertyList>
+
+
+

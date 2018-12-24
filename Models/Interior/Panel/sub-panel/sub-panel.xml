@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>sub-panel.ac</path>
+
+
+  <animation>
+   <type>material</type>
+    <object-name>sub-panel-LH</object-name>
+    <object-name>sub-panel-RH</object-name>
+    <object-name>ext-LT</object-name>
+    <object-name>boost-pump-ndl1</object-name>
+    <object-name>boost-pump-ndl2</object-name>
+    <object-name>boost-pump</object-name>
+    <object-name>level</object-name>
+    <object-name>stb-trim-ndl</object-name>
+     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.5</red>
+        <green>0.2</green>
+        <blue>0.2</blue>
+      </emission>
+  </animation>
+
+  <animation>
+	  <type>material</type>
+	  <object-name>gear-down</object-name>
+	  <object-name>gear-up</object-name>
+          <object-name>flaps-te</object-name>
+          <object-name>flaps-le</object-name>
+	  <emission>
+		  <red>   0.8 </red>
+		  <green> 0.7 </green>
+		  <blue>  0.5 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+  <animation>
+        <type>select</type>
+        <object-name>gear-down</object-name>
+        <condition>
+            <property>gear/gear[2]/position-norm</property>
+        </condition>
+    </animation>
+
+
+  <animation>
+        <type>select</type>
+        <object-name>flaps-te</object-name>
+        <condition>
+            <greater-than>
+            <property>/surface-positions/flap-pos-norm</property>
+            <value>0.49</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+  <animation>
+        <type>select</type>
+        <object-name>flaps-le</object-name>
+        <condition>
+            <property>/surface-positions/flap-pos-norm</property>
+        </condition>
+    </animation>
+
+
+<!-- LDG LIGHT -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>ldg-on</object-name>
+        <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/taxi-lights</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/landing-light</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+    </animation>
+
+  <animation>
+    <type>rotate</type>
+     <object-name>ext-LT</object-name>
+    <property>controls/switches/landing-light</property>
+    <factor> 35 </factor>
+    <axis>
+      <x1-m> 0.009 </x1-m>
+      <y1-m> -0.421 </y1-m>
+      <z1-m> -0.059 </z1-m>
+      <x2-m> 0.001 </x2-m>
+      <y2-m> -0.409 </y2-m>
+      <z2-m> -0.060 </z2-m>
+    </axis>
+  </animation>
+
+
+<!-- TAXI LIGHT -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>taxi-on</object-name>
+        <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/taxi-lights</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/landing-light</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+    </animation>
+
+  <animation>
+    <type>rotate</type>
+     <object-name>ext-LT</object-name>
+    <property>controls/switches/taxi-lights</property>
+    <factor> -35 </factor>
+    <axis>
+      <x1-m> 0.009 </x1-m>
+      <y1-m> -0.421 </y1-m>
+      <z1-m> -0.059 </z1-m>
+      <x2-m> 0.001 </x2-m>
+      <y2-m> -0.409 </y2-m>
+      <z2-m> -0.060 </z2-m>
+    </axis>
+  </animation>
+
+<!-- LIGHT OFF -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>off</object-name>
+        <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/taxi-lights</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/switches/landing-light</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+    </animation>
+
+<!-- BOOST PUMP -->
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>boost-pump-ndl1</object-name>
+  <property>engines/engine[1]/oilp-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>160</dep></entry>
+   <entry><ind>0.5</ind><dep>180</dep></entry>
+  </interpolation>
+    <axis>
+      <x1-m> -0.005 </x1-m>
+      <y1-m> -0.394 </y1-m>
+      <z1-m> -0.004 </z1-m>
+      <x2-m> -0.007 </x2-m>
+      <y2-m> -0.395 </y2-m>
+      <z2-m> -0.004 </z2-m>
+    </axis>
+ </animation> 
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>boost-pump-ndl2</object-name>
+  <property>engines/engine[0]/oilp-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>160</dep></entry>
+   <entry><ind>0.5</ind><dep>180</dep></entry>
+  </interpolation>
+    <axis>
+      <x1-m> -0.031 </x1-m>
+      <y1-m> -0.353 </y1-m>
+      <z1-m> -0.004 </z1-m>
+      <x2-m> -0.033 </x2-m>
+      <y2-m> -0.354 </y2-m>
+      <z2-m> -0.004 </z2-m>
+    </axis>
+ </animation>  
+
+<!-- STAB TRIM -->
+
+ <animation> 
+  <type>rotate</type>
+  <object-name>stb-trim-ndl</object-name>
+  <property>controls/flight/elevator-trim</property>
+  <interpolation>
+   <entry><ind>-0.1</ind><dep>42</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-42</dep></entry>
+  </interpolation>V
+    <axis>
+      <x1-m>  0.028 </x1-m>
+      <y1-m> -0.447 </y1-m>
+      <z1-m> -0.034 </z1-m>
+      <x2-m>  0.026 </x2-m>
+      <y2-m> -0.448 </y2-m>
+      <z2-m> -0.034 </z2-m>
+    </axis>
+ </animation> 
+
+
+
+<!-- INDICATE PANEL -->
+    <animation>
+        <type>material</type>
+        <object-name>canopy</object-name>
+        <object-name>LH-eng-out</object-name>
+        <object-name>RH-eng-out</object-name>
+    	<object-name>gear-brake</object-name>
+   	<object-name>spd-brake</object-name>
+ 	<object-name>AP-pitch</object-name>
+  	<object-name>AP-rud</object-name>
+	<object-name>LH-fuel</object-name>
+	<object-name>CTR-fuel</object-name>
+    	<object-name>RH-fuel</object-name>
+    	<object-name>fuel-empty</object-name>
+   	<object-name>fuel-low</object-name>
+    	<object-name>anti-ice</object-name>
+    	<object-name>ws-temp-high</object-name>
+     <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+ 	<object-name>AP-pitch</object-name>
+  <condition>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+        <not>
+            <equals>
+            <property>controls/flight/elevator-trim</property>
+		<value>0</value>
+            </equals>
+        </not>
+    </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+ 	<object-name>AP-rud</object-name>
+  <condition>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+        <not>
+            <equals>
+            <property>controls/flight/rudder-trim</property>
+		<value>0</value>
+            </equals>
+        </not>
+    </and>
+   </condition>
+  </animation>
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>spd-brake</object-name>
+  <condition>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+            <property>controls/flight/speedbrake</property>
+    </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LH-eng-out</object-name>
+  <condition>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+       <property>engines/engine/out-of-fuel</property>
+    </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>RH-eng-out</object-name>
+    <condition>
+     <and>
+       <property>engines/engine[1]/out-of-fuel</property>
+	<greater-than>
+           <property>systems/electrical/volts</property>
+	   <value>16</value>
+	</greater-than>
+       </and>
+    </condition>
+  </animation>
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>gear-brake</object-name>
+  <condition>
+   <and>
+     <greater-than>
+	<property>systems/electrical/volts</property>
+	<value>16</value>
+     </greater-than>
+     <or>
+      <property>controls/gear/brake-parking</property>
+      <property>controls/gear/brake-right</property>
+      <property>controls/gear/brake-left</property>
+     </or>
+   </and>
+   </condition>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>canopy</object-name>
+  <condition>
+   <and>
+		<greater-than>
+			<property>systems/electrical/volts</property>
+			<value>16</value>
+		</greater-than>
+     <greater-than>
+       <property>instrumentation/doors/crew/position-norm</property>
+       <value>0.05</value>
+     </greater-than>
+    </and>
+   </condition>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>fuel-empty</object-name>
+  <condition>
+      <and>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+        <less-than>
+	<property>consumables/fuel/total-fuel-norm</property>
+          <value>0.1</value>
+        </less-than>
+      </and>
+   </condition>
+  </animation>
+
+
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>fuel-low</object-name>
+  <condition>
+      <and>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+        <less-than>
+	<property>consumables/fuel/total-fuel-norm</property>
+          <value>0.2</value>
+        </less-than>
+      </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+	<object-name>LH-fuel</object-name>
+  <condition>
+      <and>
+        <greater-than>
+	<property>consumables/fuel/tank[3]/level-norm</property>
+          <value>0.9</value>
+        </greater-than>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+      </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    	<object-name>RH-fuel</object-name>
+  <condition>
+      <and>
+        <greater-than>
+	<property>consumables/fuel/tank[4]/level-norm</property>
+          <value>0.9</value>
+        </greater-than>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+      </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+	<object-name>CTR-fuel</object-name>
+  <condition>
+      <and>
+        <greater-than>
+	<property>consumables/fuel/tank[0]/level-norm</property>
+          <value>0.9</value>
+        </greater-than>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+      </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>anti-ice</object-name>
+  <condition>
+      <and>
+        <less-than>
+		<property>environment/total-air-temperature-degc</property>
+          <value>0</value>
+        </less-than>
+        <not>
+        <property>controls/anti-ice/window-heat</property>
+        </not>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+      </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>ws-temp-high</object-name>
+  <condition>
+      <and>
+        <greater-than>
+		<property>environment/total-air-temperature-degc</property>
+          <value>25</value>
+        </greater-than>
+        <property>controls/anti-ice/window-heat</property>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+          <value>16</value>
+        </greater-than>
+      </and>
+   </condition>
+  </animation>
+
+
+
+
+
+
+    <animation>
+       <type>range</type>
+       <min-m>0</min-m>
+       <max-m>5</max-m>
+    </animation>
+
+</PropertyList>
+
+

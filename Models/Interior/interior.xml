@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+<path>interior.ac</path>
+-->
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>HUDglass</object-name>
+  </animation>
+
+
+   <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>HUDglass</object-name>
+   </effect>
+
+
+
+  <!-- Pilot -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.250 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.800 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- TourPilot -->
+  <model>
+    <name>TourPilote</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Pilot/tourpilot.xml</path>
+    <offsets>
+      <x-m> -3.800 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -20 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <!-- Pilot seat -->
+  <model>
+    <name>Pilot seat</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/interior/seat/seat.ac</path>
+    <offsets>
+      <x-m> -2.450 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.600 </z-m>
+    </offsets>
+  </model>
+
+
+
+  <!--TourPilot seat -->
+  <model>
+    <name>TourPilot seat</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/interior/seat/seat.ac</path>
+    <offsets>
+      <x-m>  -1.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.700 </z-m>
+    </offsets>
+  </model>
+
+
+
+
+
+<!-- TEWS -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/TEWS/TEWS.xml</path>
+    <offsets>
+      <x-m> -5.977 </x-m>
+      <y-m> 0.176 </y-m>
+      <z-m> 0.992 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- VSD -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/VSD/VSD.xml</path>
+    <offsets>
+      <x-m> -5.977 </x-m>
+      <y-m>-0.180 </y-m>
+      <z-m> 0.996 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <!-- ADI --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/adi/adi.xml</path>
+    <offsets>
+      <x-m> -5.947 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.851 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- HSI --> 
+  <model>
+     <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/hsi/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> -5.933 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.713 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/asi/asi.xml</path>
+    <offsets>
+      <x-m> -5.964 </x-m>
+      <y-m> -0.117</y-m>
+      <z-m>  0.865 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ALT --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/alt/alt.xml</path>
+    <offsets>
+      <x-m> -5.974 </x-m>
+      <y-m>  0.116</y-m>
+      <z-m>  0.863 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- RADAR-ALT --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/radar-alt/alt.xml</path>
+    <offsets>
+      <x-m> -5.966 </x-m>
+      <y-m> -0.217</y-m>
+      <z-m>  0.865 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AOA -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/aoa/aoa.xml</path>
+    <offsets>
+      <x-m> -5.944 </x-m>
+      <y-m> -0.109 </y-m>
+      <z-m>  0.776 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ACC -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/acc/accel.xml</path>
+    <offsets>
+      <x-m> -5.928 </x-m>
+      <y-m> -0.109 </y-m>
+      <z-m>  0.697 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- VSI --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m> -5.947 </x-m>
+      <y-m>  0.129 </y-m>
+      <z-m>  0.780 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- stdby-adi -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/stdby-adi/stdby-adi.xml</path>
+    <offsets>
+      <x-m> -5.939 </x-m>
+      <y-m>  0.129 </y-m>
+      <z-m>  0.705 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- MODE SELECT --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/mode-select/mode-select.xml</path>
+    <offsets>
+      <x-m> -5.952 </x-m>
+      <y-m>  0.081 </y-m>
+      <z-m>  0.800</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- TOP PANEL -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/top-panel/top-panel.xml</path>
+    <offsets>
+      <x-m> -5.9 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> 1.040 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg> -5 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- CAMERA UNIT -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/cam-unit/cam-unit.xml</path>
+    <offsets>
+      <x-m> -6.245 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> 0.880 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--ff-RH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/ff/ff-RH.xml</path>
+    <offsets>
+      <x-m> -5.957 </x-m>
+      <y-m>  0.260</y-m>
+      <z-m>  0.830 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--ff-LH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/ff/ff-LH.xml</path>
+    <offsets>
+      <x-m> -5.957 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.830 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- N1 RH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/rpm/rpm-RH.xml</path>
+    <offsets>
+      <x-m> -5.945 </x-m>
+      <y-m>  0.260</y-m>
+      <z-m>  0.767 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- N1 LH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/rpm/rpm-LH.xml</path>
+    <offsets>
+      <x-m> -5.945 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.767 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--tgt-RH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/tgt/tgt-RH.xml</path>
+    <offsets>
+      <x-m> -5.938 </x-m>
+      <y-m>  0.260</y-m>
+      <z-m>  0.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--tgt-LH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/tgt/tgt-LH.xml</path>
+    <offsets>
+      <x-m> -5.938 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.700 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--NOZZLE-POSITION-RH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/nozzle-pos/noz-pos-RH.xml</path>
+    <offsets>
+      <x-m> -5.930 </x-m>
+      <y-m>  0.260</y-m>
+      <z-m>  0.637 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--NOZZLE-POSITION-LH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/nozzle-pos/noz-pos-LH.xml</path>
+    <offsets>
+      <x-m> -5.930 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.637 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FuelGauge -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> -5.969 </x-m>
+      <y-m>  0.267 </y-m>
+      <z-m>  0.892 </z-m>
+      <roll-deg>  0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- chronograph -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/chronograph/chronograph.xml</path>
+    <offsets>
+      <x-m> -5.900 </x-m>
+      <y-m>  0.318 </y-m>
+      <z-m>  0.880 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -10 </pitch-deg>
+      <heading-deg>-25 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- MASTER caution -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/caution/master-caution.xml</path>
+    <offsets>
+      <x-m> -5.957 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.908 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ENGINE caution -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/caution/eng-caution.xml</path>
+    <offsets>
+      <x-m> -5.959 </x-m>
+      <y-m>  0.197</y-m>
+      <z-m>  0.880 </z-m>  <animation>
+    <type>select</type>
+    <object-name>eng-fire-RH</object-name>
+    <condition>
+       <and>
+        <greater-than>
+	  <property>systems/electrical/volts</property>
+	  <value>16</value>
+        </greater-than>
+
+        <less-than>
+	  <property>systems/electrical/volts</property>
+	  <value>20</value>
+        </less-than>
+
+        <property>/sim/model/lights/sbc1/state</property>
+      </and>
+   </condition>
+  </animation>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- MODE SELECT --> 
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/steer-mode-sw/steer-mode-sw.xml</path>
+    <offsets>
+      <x-m> -5.918 </x-m>
+      <y-m>  0.130</y-m>
+      <z-m>  0.630 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- MPCD -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/MPCD/MPCD.xml</path>
+    <offsets>
+      <x-m>-5.945 </x-m>
+      <y-m>-0.222 </y-m>
+      <z-m> 0.743 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- LANDING GEAR -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+      <x-m> -5.950 </x-m>
+      <y-m> -0.313 </y-m>
+      <z-m> 0.770 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- DG -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/dg/dg.xml</path>
+    <offsets>
+      <x-m> -5.910 </x-m>
+      <y-m> 0.110 </y-m>
+      <z-m> 1.270 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AVTR -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/video/video.xml</path>
+    <offsets>
+      <x-m> -5.965 </x-m>
+      <y-m> -0.280 </y-m>
+      <z-m> 0.935 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- HOOK SWITCH -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/hook-sw/hook-sw.xml</path>
+    <offsets>
+      <x-m>-6.019 </x-m>
+      <y-m> 0.313 </y-m>
+      <z-m> 0.750 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- CANOPY EMERG JETT -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/canopy-emer-jett/canopy-emer-jett.ac</path>
+    <offsets>
+      <x-m> -5.845 </x-m>
+      <y-m> -0.370 </y-m>
+      <z-m> 0.835 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- CANOPY UNLOCK -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/canopy-emer-jett/canopy-unlock.ac</path>
+    <offsets>
+      <x-m> -5.810 </x-m>
+      <y-m>  0.370 </y-m>
+      <z-m> 0.837 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AOA INDICATER -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/aoa-indicater/aoa-indicater.xml</path>
+    <offsets>
+      <x-m> -6.130 </x-m>
+      <y-m>  0.135 </y-m>
+      <z-m>  1.180 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AOA INDICATER -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/aoa-indicater/aoa-indicater.xml</path>
+    <offsets>
+      <x-m> -6.130 </x-m>
+      <y-m> -0.135 </y-m>
+      <z-m>  1.180 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- GEAR CAUTION -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/caution/gear-caution.xml</path>
+    <offsets>
+      <x-m> -5.880 </x-m>
+      <y-m>-0.095 </y-m>
+      <z-m> 0.990 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- LABEL CTR --> 
+  <model>
+     <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/label/do_not_lower_gear.ac</path>
+    <offsets>
+      <x-m> -5.920 </x-m>
+      <y-m> 0.001 </y-m>
+      <z-m> 0.618 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+ </model>
+
+  <!-- LABEL JETT --> 
+  <model>
+     <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/label/EMERG_JETT.ac</path>
+    <offsets>
+      <x-m>-5.840 </x-m>
+      <y-m>-0.360 </y-m>
+      <z-m> 0.860 </z-m>
+      <roll-deg>   -5 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 83 </heading-deg>
+    </offsets>
+ </model>
+
+  <!-- LABEL JETT --> 
+  <model>
+     <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/label/EMERG_UNLOCK.ac</path>
+    <offsets>
+      <x-m>-5.840 </x-m>
+      <y-m> 0.360 </y-m>
+      <z-m> 0.860 </z-m>
+      <roll-deg>    5 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg>-83 </heading-deg>
+    </offsets>
+ </model>
+
+  <!-- MSL JETT --> 
+  <model>
+     <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/MSL_jett/MSL_jett.xml</path>
+    <offsets>
+      <x-m> -5.905 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.605 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -30 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+ </model>
+
+
+
+<!--HYD-1-->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/hyd/hyd-RH.xml</path>
+    <offsets>
+      <x-m> -5.891 </x-m>
+      <y-m> 0.069 </y-m>
+      <z-m> 0.580 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -30 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--HYD-UTILITY-->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/hyd/hyd-ut.xml</path>
+   <offsets>
+      <x-m> -5.860 </x-m>
+      <y-m> 0.069 </y-m>
+      <z-m> 0.533 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -30 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--oil-pressure-RH-->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/oil-p/oil-p-RH.xml</path>
+    <offsets>
+      <x-m> -5.838 </x-m>
+      <y-m>  0.069 </y-m>
+      <z-m>  0.483 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -30 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--cabin Pressure -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/pai/pai.xml</path>
+    <offsets>
+      <x-m> -5.888 </x-m>
+      <y-m> 0.014 </y-m>
+      <z-m> 0.575 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -30 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- SUB PANEL -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/sub-panel/sub-panel.xml</path>
+    <offsets>
+      <x-m> -5.787 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.713 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- OXY REG  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/oxyreg/oxyreg.xml</path>
+    <offsets>
+      <x-m> -5.715 </x-m>
+      <y-m>-0.372 </y-m>
+      <z-m> 0.620</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- anti-skid-sw  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/anti-skid-sw/anti-skid-sw.xml</path>
+    <offsets>
+      <x-m> -5.699 </x-m>
+      <y-m>-0.467 </y-m>
+      <z-m> 0.639</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- ENG MASTER  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/eng-master/eng-master.xml</path>
+    <offsets>
+      <x-m> -5.653 </x-m>
+      <y-m>-0.362 </y-m>
+      <z-m> 0.613</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- RUD-TRIM -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/rud_trim/rud_trim.xml</path>
+    <offsets>
+      <x-m> -5.432 </x-m>
+      <y-m>-0.326 </y-m>
+      <z-m> 0.609</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg>-90.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- thrust-lever -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -5.540 </x-m>
+      <y-m>-0.423 </y-m>
+      <z-m> 0.623</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- CAS -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/cas/cas.xml</path>
+    <offsets>
+      <x-m> -5.373 </x-m>
+      <y-m>-0.362 </y-m>
+      <z-m> 0.613</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg>-90 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- FLAP SW -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/flap-switch/flap_sw.xml</path>
+    <offsets>
+      <x-m> -5.473 </x-m>
+      <y-m>-0.485 </y-m>
+      <z-m> 0.730</z-m>
+      <roll-deg> -17 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- ICS -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/ics/ics.xml</path>
+    <offsets>
+      <x-m> -5.309 </x-m>
+      <y-m>-0.362 </y-m>
+      <z-m> 0.614</z-m>
+      <roll-deg> -11.5 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- fuel  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -5.340 </x-m>
+      <y-m>-0.480 </y-m>
+      <z-m> 0.638</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-79 </pitch-deg>
+      <heading-deg> 90.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- AUDIO -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/audio/audio.xml</path>
+    <offsets>
+      <x-m> -5.211 </x-m>
+      <y-m>-0.421 </y-m>
+      <z-m> 0.625</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-79 </pitch-deg>
+      <heading-deg> 90.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- low alt set -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/alt-set/alt-set.xml</path>
+    <offsets>
+      <x-m> -5.180 </x-m>
+      <y-m>-0.480 </y-m>
+      <z-m> 0.643</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg>-79 </pitch-deg>
+      <heading-deg> 90.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- GEN  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/gen/gen.xml</path>
+    <offsets>
+      <x-m> -5.810 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.613</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- TACAN  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -5.662 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.612</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- IFF CONTRL -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/IFF_cntrl/IFF_cntrl.xml</path>
+    <offsets>
+      <x-m> -5.568 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.613</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- IFF -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/IFF/IFF.xml</path>
+    <offsets>
+      <x-m> -5.469 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.613</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- COMPASS  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/compass/compass.xml</path>
+    <offsets>
+      <x-m> -5.414 </x-m>
+      <y-m> 0.427 </y-m>
+      <z-m> 0.628</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- SPACER  -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/spacer/spacer2.xml</path>
+    <offsets>
+      <x-m> -5.214 </x-m>
+      <y-m> 0.357 </y-m>
+      <z-m> 0.615</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- EXT-LT -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/EXT-LT/Ext-LT.xml</path>
+    <offsets>
+      <x-m> -5.204 </x-m>
+      <y-m> 0.515 </y-m>
+      <z-m> 0.645</z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- INTERIOR LT -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/LT/LT.xml</path>
+    <offsets>
+      <x-m>-5.365 </x-m>
+      <y-m> 0.498 </y-m>
+      <z-m> 0.641 </z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- TEMP -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/temp/temp.xml</path>
+    <offsets>
+      <x-m>-5.535 </x-m>
+      <y-m> 0.484 </y-m>
+      <z-m> 0.638 </z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- PAI -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/pai/pai.xml</path>
+    <offsets>
+      <x-m>-5.620 </x-m>
+      <y-m> 0.480 </y-m>
+      <z-m> 0.640 </z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- ECS  -->
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/ECS/ECS.xml</path>
+    <offsets>
+      <x-m>-5.630 </x-m>
+      <y-m> 0.484 </y-m>
+      <z-m> 0.638 </z-m>
+      <roll-deg> 11.5 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- CANOPY-LEVER -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/canopy-lever/canopy-lever.xml</path>
+    <offsets>
+      <x-m> -5.600 </x-m>
+      <y-m>-0.428 </y-m>
+      <z-m> 0.812</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- EJECT LT LOW ALT LT -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/alt-set/low-alt.xml</path>
+    <offsets>
+      <x-m> -5.520 </x-m>
+      <y-m>-0.490 </y-m>
+      <z-m> 0.690</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 70.0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- LOW ALT LT_0 -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/alt-set/low-alt0.xml</path>
+    <offsets>
+      <x-m> -5.957 </x-m>
+      <y-m>-0.170 </y-m>
+      <z-m> 1.090 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -10 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- FUNCTION -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/function_parts/emerg-flood-LT-cntrl.xml</path>
+    <offsets>
+      <x-m> -5.470 </x-m>
+      <y-m> 0.500 </y-m>
+      <z-m> 0.730</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 18 </pitch-deg>
+      <heading-deg> -90.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/function_parts/stby-A1.xml</path>
+    <offsets>
+      <x-m> -5.330 </x-m>
+      <y-m> 0.495 </y-m>
+      <z-m> 0.730</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 18 </pitch-deg>
+      <heading-deg> -90.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/function_parts/intensety-cntrl.xml</path>
+    <offsets>
+      <x-m> -5.150 </x-m>
+      <y-m> 0.495 </y-m>
+      <z-m> 0.750</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 18 </pitch-deg>
+      <heading-deg> -90.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/function_parts/drag-chute-lever.xml</path>
+    <offsets>
+      <x-m> -5.450 </x-m>
+      <y-m> -0.270 </y-m>
+      <z-m> 0.580</z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/canopy-function/ext-tank-ind.xml</path>
+    <offsets>
+      <x-m>-5.920 </x-m>
+      <y-m>-0.100 </y-m>
+      <z-m> 1.285</z-m>
+      <roll-deg>20 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+

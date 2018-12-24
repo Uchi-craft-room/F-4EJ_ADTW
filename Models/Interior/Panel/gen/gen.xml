@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>gen.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>LH-GEN-OUT</object-name>
+    <object-name>RH-GEN-OUT</object-name>
+    <emission>
+      <red> 0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>RH-GEN-OUT</object-name>
+    <condition>
+    <and>
+     <equals>
+     <property>controls/electric/engine[0]/generator</property>
+        <value>0</value>
+     </equals>
+     <property>controls/engines/engine[0]/starter</property>
+     <property>/sim/model/lights/sbc1/state</property>
+     <equals>
+	<property>controls/electric/external-power</property>
+        <value>0</value>
+     </equals>
+    </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LH-GEN-OUT</object-name>
+    <condition>
+    <and>
+     <equals>
+     <property>controls/electric/engine[1]/generator</property>
+        <value>0</value>
+     </equals>
+     <property>controls/engines/engine[1]/starter</property>
+     <property>/sim/model/lights/sbc1/state</property>
+     <equals>
+	<property>controls/electric/external-power</property>
+        <value>0</value>
+     </equals>
+    </and>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>gen-LH</object-name>
+    <object-name>gen-RH</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+
+
+<!--   GEN-on  -->
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>gen-on</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[0]/generator</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[1]/generator</property>
+        <value>1</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>
+	<property>controls/APU/off-start-run</property>
+        <value>0</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>>
+	<property>controls/electric/external-power</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gen-RH</object-name>
+    <object-name>gen-LH</object-name>
+    <property>controls/electric/engine[0]/generator</property>
+    <factor>20</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m>-0.000 </x-m>
+      <y-m> 0.059 </y-m>
+      <z-m>-0.073 </z-m>
+    </center>
+  </animation>
+
+
+
+
+<!--   GEN-off   -->
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>gen-off</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[0]/generator</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[1]/generator</property>
+        <value>0</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>
+	<property>controls/APU/off-start-run</property>
+        <value>0</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>>
+	<property>controls/electric/external-power</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gen-RH</object-name>
+    <object-name>gen-LH</object-name>
+    <property>controls/electric/engine[0]/generator</property>
+    <factor>0</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m>-0.000 </x-m>
+      <y-m> 0.059 </y-m>
+      <z-m>-0.073 </z-m>
+    </center>
+  </animation>
+
+
+
+<!-- EXT-PWR -->
+
+ <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>ext-pwr</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[0]/generator</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/electric/engine[1]/generator</property>
+        <value>0</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>
+	<property>controls/APU/off-start-run</property>
+        <value>1</value>
+      </binding>
+      <binding>
+	<command>property-assign</command>>
+	<property>controls/electric/external-power</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gen-RH</object-name>
+    <object-name>gen-LH</object-name>
+	<property>controls/electric/external-power</property>
+    <factor>-30</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m>-0.000 </x-m>
+      <y-m> 0.059 </y-m>
+      <z-m>-0.073 </z-m>
+    </center>
+  </animation>
+
+ 
+
+
+<!-- LOD -->
+    <animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+
+</PropertyList>
+

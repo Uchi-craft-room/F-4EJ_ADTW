@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+<path>MPCD.ac</path>
+
+<!-- lighting -->
+
+  <animation> 
+   <type>material</type>
+   <object-name>base</object-name>
+   <object-name>knob</object-name>
+   <object-name>sel-knob</object-name>
+   <object-name>sw-upr1</object-name>
+   <object-name>sw-upr2</object-name>
+   <object-name>sw-upr3</object-name>
+   <object-name>sw-upr4</object-name>
+   <object-name>sw-upr5</object-name>
+    <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.5</red>
+        <green>0.2</green>
+        <blue>0.2</blue>
+      </emission>
+  </animation>
+
+
+  <animation> 
+   <type>material</type>
+   <object-name>fuel-ctr-day</object-name>
+   <object-name>fuel-wing-day</object-name>
+    <emission> 
+        <red>1</red>
+        <green>1</green>
+        <blue>1</blue>
+      </emission>
+  </animation>
+
+<!-- EXT TANK CTR -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>sw-upr3</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/ext-tank-ctr-selected</property>
+        <value type="int">0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[5]/selected</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[5]/level-norm</property>
+        <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>sw-upr3</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/ext-tank-ctr-selected</property>
+        <value type="int">1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[5]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[5]/level-norm</property>
+        <value>1</value>
+      </binding>
+    </action>
+  </animation>
+
+
+   <animation>
+     <type>select</type>
+	<object-name>fuel-ctr-day</object-name>
+        <condition>
+         <and>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[1]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <equals>
+           <property>/consumables/fuel/ext-tank-ctr-selected</property>
+            <value>1</value>
+         </equals>
+         </and>
+        </condition>
+     </animation>
+
+
+
+
+
+
+
+
+<!-- EXT TANK WING -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>sw-upr1</object-name>
+    <object-name>sw-upr5</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/ext-tank-wing-selected</property>
+        <value type="int">0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[6]/selected</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[6]/level-norm</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[7]/selected</property>
+        <value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[7]/level-norm</property>
+        <value>0</value>
+      </binding>
+    </action>
+  </animation>
+
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>sw-upr1</object-name>
+    <object-name>sw-upr5</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/ext-tank-wing-selected</property>
+        <value type="int">1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[6]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[6]/level-norm</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[7]/selected</property>
+        <value>true</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/consumables/fuel/tank[7]/level-norm</property>
+        <value>1</value>
+      </binding>
+    </action>
+  </animation>
+
+
+   <animation>
+     <type>select</type>
+	<object-name>fuel-wing-day</object-name>
+        <condition>
+         <and>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[1]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <equals>
+           <property>/consumables/fuel/ext-tank-wing-selected</property>
+            <value>1</value>
+         </equals>
+         </and>
+        </condition>
+     </animation>
+
+<!-- LOD -->
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

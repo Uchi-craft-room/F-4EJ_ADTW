@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="F-4EJ_ADTW-yasim-cnf.xml">
+
+  <sim>
+    <description>F-4EJ_ADTW (YASim)</description>
+    <status>v1.0</status>
+    <author>Hitoshi Uchida(3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
+
+
