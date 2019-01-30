@@ -11,12 +11,9 @@
     <object-name>wind-shield-FR.002</object-name>
     <object-name>canopy-glass-FR</object-name>
     <object-name>canopy-glass-RR</object-name>
-    <object-name>canopy-glass-FR.002</object-name>
-    <object-name>canopy-glass-RR.002</object-name>
     <object-name>canopy-mirror</object-name>
     <object-name>landinglight-lenz</object-name>
     <object-name>taxinglight-lenz</object-name>
-    <object-name>wind-shield.002</object-name>
     <object-name>canopy-glass-CTR</object-name>
   </animation>
 
@@ -80,26 +77,6 @@
     <object-name>canopy-mirror</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader_inn.png</texture>
-    <object-name>canopy-glass-FR.002</object-name>
-    <object-name>canopy-glass-RR.002</object-name>
-    <object-name>wind-shield.002</object-name>
-  </animation>
-
-    <animation>
-        <type>select</type>
-    	<object-name>canopy-glass-FR.002</object-name>
-    	<object-name>canopy-glass-RR.002</object-name>
-        <object-name>wind-shield.002</object-name>
-        <condition>
-            <not>
-                <property>environment/surface/wetness</property>
-            </not>
-        </condition>
-    </animation>
 
   <animation>
     <type>material</type>
@@ -1759,7 +1736,6 @@
     <name>CanopyTotaleFR</name>
         <object-name>canopy-glass-FR</object-name>
         <object-name>canopy-glass-FR.001</object-name>
-        <object-name>canopy-glass-FR.002</object-name>
         <object-name>canopy-door-FR</object-name>
     	<object-name>canopy-mirror</object-name>
   </animation>
@@ -1786,7 +1762,6 @@
     <name>CanopyTotaleRR</name>
         <object-name>canopy-glass-RR</object-name>
         <object-name>canopy-glass-RR.001</object-name>
-        <object-name>canopy-glass-RR.002</object-name>
         <object-name>canopy-door-RR</object-name>
   </animation>
 

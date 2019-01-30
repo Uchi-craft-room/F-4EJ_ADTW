@@ -18,6 +18,8 @@
 
 
 
+
+
   <!-- Pilot -->
   <model>
     <name>Pilote</name>
@@ -254,6 +256,21 @@
       <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
+
+<!-- HUD SYMBOL -->
+  <model>
+    <path>Aircraft/F-4EJ_ADTW/Models/Interior/Panel/hud/symbol.xml</path>
+    <offsets>
+      <x-m> -6.100 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> 1.23 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
 
 <!-- CAMERA UNIT -->
   <model>

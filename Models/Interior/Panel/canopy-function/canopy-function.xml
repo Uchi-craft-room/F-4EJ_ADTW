@@ -63,9 +63,9 @@
     <type>material</type>
     <object-name>engage</object-name>
     <emission>
-      <red>   1 </red>
-      <green> 1 </green>
-      <blue>  1 </blue>
+      <red>   0.4 </red>
+      <green> 0.4</green>
+      <blue>  0.4 </blue>
     </emission> 
   </animation> 
 

@@ -59,6 +59,150 @@
     </ladder>
 
 
+    <turn-bank-indicator>
+        <name>Turn Bank Indicator</name>
+        <x>-50</x>
+        <y>-103</y>
+        <width>100</width>
+        <height>100</height>
+
+        <condition>
+         <and>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[1]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+         </and>
+        </condition>
+
+        <bank-input>
+            <property>/orientation/roll-deg</property>
+            <factor>-1</factor>
+        </bank-input>
+        <sideslip-input>
+            <property>/orientation/side-slip-deg</property>
+        </sideslip-input>
+        <gap-width>5</gap-width>
+        <bank-scale>true</bank-scale>
+        <bank-scale-radius>250</bank-scale-radius>
+        <option>top</option>
+    </turn-bank-indicator>
+
+    <tape>
+        <name>NAV BEARING gear up</name>
+        <x>-50</x>
+        <y>44</y>
+        <width>100</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>3</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/nav/crosstrack-heading-error-deg</property>
+                <value>0</value>
+              </equals>
+           </not>
+         <equals>
+            <property>controls/gear/gear-down</property>
+            <value>0</value>
+         </equals>
+         </and>
+        </condition>
+
+        <input>
+            <property>instrumentation/nav/heading-needle-deflection</property>
+            <factor>-1</factor>
+            <max>7</max>
+            <min>-7</min>
+        </input>
+        <display-span>20</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+    <tape>
+        <name>NAV BEARING gear down</name>
+        <x>-50</x>
+        <y>-80</y>
+        <width>100</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>3</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/nav/crosstrack-heading-error-deg</property>
+                <value>0</value>
+              </equals>
+           </not>
+         <equals>
+            <property>controls/gear/gear-down</property>
+            <value>1</value>
+         </equals>
+         </and>
+        </condition>
+
+        <input>
+            <property>instrumentation/nav/heading-needle-deflection</property>
+            <factor>-1</factor>
+            <max>7</max>
+            <min>-7</min>
+        </input>
+        <display-span>20</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+
 
     <tape>
         <name>Altitude-MSL gear-up</name>
@@ -719,7 +863,7 @@
     <tape>
         <name>Gyrocompass gear-down</name>
         <x>-40</x>
-        <y>-85</y>
+        <y>-78</y>
         <width>80</width>
         <height>10</height>
         <condition>
@@ -767,7 +911,7 @@
     <label>
         <name>Gyro Heading Marker gear-down</name>
         <x>0</x>
-        <y>-89</y>
+        <y>-82</y>
         <width>1</width>
         <height>2</height>
         <format>^</format>
@@ -860,9 +1004,93 @@
     </label>
 
     <label>
-        <name>DME miles</name>
-        <x>65</x>
+        <name>ILST</name>
+        <x>56</x>
         <y>-80</y>
+        <width>1</width>
+        <height>1</height>
+        <format>ILST</format>
+        <condition>
+           <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>0</value>
+            </equals>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+            </greater-than>
+           </and>
+        </condition>
+    </label>
+
+    <label>
+        <name>ILSN</name>
+        <x>56</x>
+        <y>-80</y>
+        <width>1</width>
+        <height>1</height>
+        <format>ILSN</format>
+        <condition>
+           <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>1</value>
+            </equals>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+            </greater-than>
+           </and>
+        </condition>
+    </label>
+
+    <label>
+        <name>TCN</name>
+        <x>56</x>
+        <y>-80</y>
+        <width>1</width>
+        <height>1</height>
+        <format>TCN</format>
+        <condition>
+           <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>2</value>
+            </equals>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+            </greater-than>
+           </and>
+        </condition>
+    </label>
+
+    <label>
+        <name>NAV</name>
+        <x>56</x>
+        <y>-80</y>
+        <width>1</width>
+        <height>1</height>
+        <format>NAV</format>
+        <condition>
+           <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>3</value>
+            </equals>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+            </greater-than>
+           </and>
+        </condition>
+    </label>
+
+    <label>
+        <name>DME miles</name>
+        <x>51</x>
+        <y>-86</y>
         <width>1</width>
         <height>1</height>
         <condition>
@@ -883,13 +1111,13 @@
           <damp>1.0</damp>
         </input>
         <format>%4.1f</format>
-        <halign>right</halign>
+        <halign>left</halign>
     </label>
 
     <label>
         <name>DME miles NM</name>
-        <x>75</x>
-        <y>-80</y>
+        <x>50</x>
+        <y>-86</y>
         <width>1</width>
         <height>1</height>
         <condition>
@@ -904,7 +1132,56 @@
          </greater-than>
            </and>        
         </condition>
-        <format>NM</format>
+        <format>N</format>
+        <halign>right</halign>
+    </label>
+
+    <label>
+        <name>DME TIME MIN</name>
+        <x>60</x>
+        <y>-92</y>
+        <width>1</width>
+        <height>1</height>
+        <condition>
+          <and>        
+              <property>instrumentation/dme/in-range</property>
+              <not>
+                <property>instrumentation/nav/has-gs</property>
+              </not>
+            <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+           </greater-than>
+          </and>        
+        </condition>
+        <input>
+          <property>instrumentation/dme/indicated-time-min</property>
+          <factor>1</factor>
+          <damp>1.0</damp>
+        </input>
+        <format>%4.1f</format>
+        <halign>right</halign>
+    </label>
+
+    <label>
+        <name>DME MIN</name>
+        <x>75</x>
+        <y>-92</y>
+        <width>1</width>
+        <height>1</height>
+        <condition>
+           <and>        
+              <property>instrumentation/dme/in-range</property>
+              <not>
+                <property>instrumentation/nav/has-gs</property>
+              </not>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           </and>        
+        </condition>
+        <format>min</format>
         <halign>right</halign>
     </label>
 
