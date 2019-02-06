@@ -4,8 +4,8 @@
 
   <sim include="Nasal/views.xml">
 
-    <aircraft-version>1.2</aircraft-version>
-    <status>Ver.1.2</status>
+    <aircraft-version>1.3</aircraft-version>
+    <status>Ver.1.3</status>
 
     <fuel-fraction>1.0</fuel-fraction>
 
@@ -52,8 +52,9 @@
         <float n="1" alias="surface-positions/speedbrake-pos-norm"/>
         <float n="2" alias="engines/engine[0]/out-of-fuel"/>
         <float n="3" alias="engines/engine[0]/afterburner"/>
-        <float n="2" alias="engines/engine[1]/out-of-fuel"/>
-        <float n="3" alias="engines/engine[1]/afterburner"/>
+        <float n="4" alias="engines/engine[1]/out-of-fuel"/>
+        <float n="5" alias="engines/engine[1]/afterburner"/>
+        <float n="6" alias="sim/model/dragchute/position-norm"/>
         <int n="8" alias="consumables/fuel/ext-tank-ctr-selected"/>
         <int n="9" alias="consumables/fuel/ext-tank-wing-selected"/>
       </generic>
@@ -145,6 +146,9 @@
     <doors>
       <file>Aircraft/F-4EJ_ADTW/Nasal/doors.nas</file>
     </doors>
+    <dragchute>
+      <file>Aircraft/F-4EJ_ADTW/Nasal/dragchute.nas</file>
+    </dragchute>
     <F-4EJ_ADTW>
       <file>Aircraft/F-4EJ_ADTW/Nasal/electrical.nas</file>
       <file>Aircraft/F-4EJ_ADTW/Nasal/light.nas</file>

@@ -103,6 +103,7 @@
 <object-name>fuselage-FR</object-name>
 <object-name>fuselage-RL</object-name>
 <object-name>fuselage-bottom</object-name>
+<object-name>fuselage-cap</object-name>
 <object-name>rudder</object-name>
 <object-name>stabilator</object-name>
 <object-name>stabilator-slat</object-name>
@@ -157,6 +158,73 @@
       <blue-prop>emission/blue</blue-prop>
     </emission>
 </animation>
+
+
+<!-- DRAGCHUTE -->
+
+  <model>
+    <name>DRAGCHUTE</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/dragchute/dragchute_assy.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 1 </z-m>>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>DRAGCHUTE</object-name>
+    <condition>
+          <property>/sim/model/dragchute/enable</property>
+          <property>/sim/model/dragchute/position-norm</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>DRAGCHUTE</object-name>
+    <property>/sim/model/dragchute/force</property>
+    <interpolation>
+      <entry><ind>  0.00 </ind><dep>10.0 </dep></entry>
+      <entry><ind>  0.2 </ind><dep>  8.0 </dep></entry>
+      <entry><ind>  1.00 </ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 8.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.050 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>fuselage-cap</object-name>
+    <property>/sim/model/dragchute/position-norm</property>
+    <interpolation>
+      <entry><ind>  0.0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  0.1  </ind><dep> 90 </dep></entry>
+      <entry><ind>  1.0 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 8.097 </x-m>
+      <y-m> 0.184 </y-m>
+      <z-m> 1.156 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
 
 
 <!-- yaw indicator -->
@@ -1811,9 +1879,9 @@
   <name>Tail-Light</name>
     <path>Aircraft/F-4EJ_ADTW/Models/light/TailLight.xml</path>
     <offsets>
-      <x-m> 8.280 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 1.100 </z-m>
+      <x-m> 8.330 </x-m>
+      <y-m> 0.065 </y-m>
+      <z-m> 1.110 </z-m>
     </offsets>
   </model>
 
@@ -1821,7 +1889,12 @@
     <type>select</type>
     <object-name>Tail-Light</object-name>
     <condition>
+        <and>
           <property>controls/lighting/nav-lights</property>
+          <not>
+          <property>/sim/model/dragchute/position-norm</property>
+          </not>
+        </and>
     </condition>
   </animation>
 
@@ -1935,7 +2008,7 @@
     <name>LAND_Light</name>
     <path>Aircraft/F-4EJ_ADTW/Models/light/Landinglight.xml</path>
     <offsets>
-      <x-m> -6.600 </x-m>
+      <x-m> -6.650 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -0.850 </z-m>
       <pitch-deg> -10 </pitch-deg>
@@ -1967,7 +2040,7 @@
     <name>TAXI_Light</name>
     <path>Aircraft/F-4EJ_ADTW/Models/light/Landinglight.xml</path>
     <offsets>
-      <x-m> -6.600 </x-m>
+      <x-m> -6.750 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -0.700 </z-m>
       <pitch-deg> 0 </pitch-deg>

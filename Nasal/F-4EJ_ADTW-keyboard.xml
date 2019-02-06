@@ -12,6 +12,17 @@
     </binding>
   </key>
 
+ <key n="106">
+  <name>j</name>
+    <desc>open/close Dragchute</desc>
+      <binding>
+      <command>property-toggle</command>
+      <property>/sim/model/dragchute/enable</property>
+      </binding>
+ </key>
+
+
+
  <key n="101">
   <name>e</name>
   <desc>Up/Down arresting hook</desc>

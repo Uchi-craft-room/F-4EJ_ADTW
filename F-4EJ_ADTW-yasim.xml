@@ -15,7 +15,7 @@
 
 <airplane mass="28000">
 
-  <approach speed="127" aoa="19" fuel="0.6">
+  <approach speed="140" aoa="19" fuel="0.6">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.5"/>
     <control-setting axis="/controls/flight/flaps"               value="1.0"/>
@@ -211,11 +211,11 @@
 
   <gear x="-1.0" y="2.75" z="-1.85"
         retract-time = "3"
-         compression = "0.5"
-              spring = "0.5"
-                damp = "0.8"
+         compression = "0.3"
+              spring = "0.3"
+                damp = "1"
         initial-load = "0"
-               sfric = "0.6">
+               sfric = "0.8">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -225,11 +225,11 @@
 
   <gear x="-1.0" y="-2.75" z="-1.85"
         retract-time = "3"
-         compression = "0.5"
-              spring = "0.5"
-                damp = "0.8"
+         compression = "0.3"
+              spring = "0.3"
+                damp = "1"
         initial-load = "0"
-               sfric = "0.6">
+               sfric = "0.8">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -251,7 +251,7 @@
    </gear>
 
 
-   <hook x="-4.6" y="0.000" z="-0.2" length="2.0" down-angle="50" up-angle="-20">
+   <hook x="-4.8" y="0.000" z="-0.2" length="2.0" down-angle="50" up-angle="-20">
         <control-input axis="/controls/gear/tailhook" control="HEXTEND"/>
         <control-output control="HEXTEND" prop="/gear/gear[2]/hook"/>
         <control-speed control="HEXTEND" transition-time="3"/>
@@ -280,8 +280,12 @@
   <ballast x="8" y="0" z="0.2" mass="1900"/>
 
 
- <thruster x="4.380" y="0.0" z="-2.272" vx="1" vy="0" vz="0" thrust="1500">
+ <thruster x="6.380" y="0.0" z="-2.272" vx="1" vy="0" vz="0" thrust="1500">
  <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster>
+
+ <thruster x="-8.0" y="0.0" z="1.0" vx="1" vy="0" vz="0" thrust="10000">
+ <control-input axis="/sim/model/dragchute/force" control="THROTTLE" src0="0" src1="1" dst0="0" dst1="-1"/>
  </thruster>
 
 </airplane>
