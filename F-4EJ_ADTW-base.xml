@@ -77,6 +77,11 @@
        <name>e</name>
        <desc>Up/Down arresting hook</desc>
       </key>
+
+      <key>
+       <name>j</name>
+       <desc>Open/Close dragchute</desc>
+      </key>
     </help>
 
     <menubar include="Dialogs/F-4EJ_ADTW-menu.xml"/>
