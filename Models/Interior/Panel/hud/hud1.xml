@@ -94,9 +94,9 @@
 
     <tape>
         <name>NAV BEARING gear up</name>
-        <x>-50</x>
+        <x>-40</x>
         <y>44</y>
-        <width>100</width>
+        <width>80</width>
         <height>40</height>
         <condition>
         <and>
@@ -120,14 +120,13 @@
          </equals>
          </and>
         </condition>
-
         <input>
-            <property>instrumentation/nav/heading-needle-deflection</property>
+            <property>/instrumentation/nav/nav-needle-error-deg</property>
             <factor>-1</factor>
-            <max>7</max>
-            <min>-7</min>
+            <max>14.5</max>
+            <min>-14.5</min>
         </input>
-        <display-span>20</display-span>
+        <display-span>31</display-span>
         <option>top</option>
         <option>notext</option>
         <major-divisions>20</major-divisions>
@@ -147,11 +146,13 @@
         <tick-length>variable</tick-length>
     </tape>
 
+
+
     <tape>
         <name>NAV BEARING gear down</name>
-        <x>-50</x>
+        <x>-40</x>
         <y>-80</y>
-        <width>100</width>
+        <width>80</width>
         <height>40</height>
         <condition>
         <and>
@@ -175,14 +176,13 @@
          </equals>
          </and>
         </condition>
-
         <input>
-            <property>instrumentation/nav/heading-needle-deflection</property>
+            <property>/instrumentation/nav/nav-needle-error-deg</property>
             <factor>-1</factor>
-            <max>7</max>
-            <min>-7</min>
+            <max>14.5</max>
+            <min>-14.5</min>
         </input>
-        <display-span>20</display-span>
+        <display-span>31</display-span>
         <option>top</option>
         <option>notext</option>
         <major-divisions>20</major-divisions>
@@ -201,6 +201,122 @@
         <tick-type>line</tick-type>
         <tick-length>variable</tick-length>
     </tape>
+
+
+    <tape>
+        <name>TACAN BEARING gear up</name>
+        <x>-40</x>
+        <y>44</y>
+        <width>80</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>2</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/tacan/indicated-distance-nm</property>
+                <value>0</value>
+              </equals>
+           </not>
+         <equals>
+            <property>controls/gear/gear-down</property>
+            <value>0</value>
+         </equals>
+         </and>
+        </condition>
+        <input>
+            <property>/instrumentation/tacan/tacan-needle-error-deg</property>
+            <factor>-1</factor>
+            <max>14.5</max>
+            <min>-14.5</min>
+        </input>
+        <display-span>31</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+
+
+    <tape>
+        <name>TACAN BEARING gear down</name>
+        <x>-40</x>
+        <y>-80</y>
+        <width>80</width>
+        <height>40</height>
+        <condition>
+        <and>
+            <equals>
+               <property>instrumentation/steer-mode</property>
+               <value>2</value>
+            </equals>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>16</value>
+         </greater-than>
+           <not>
+              <equals>
+                <property>instrumentation/tacan/indicated-distance-nm</property>
+                <value>0</value>
+              </equals>
+           </not>
+         <equals>
+            <property>controls/gear/gear-down</property>
+            <value>1</value>
+         </equals>
+         </and>
+        </condition>
+        <input>
+            <property>/instrumentation/tacan/tacan-needle-error-deg</property>
+            <factor>-1</factor>
+            <max>14.5</max>
+            <min>-14.5</min>
+        </input>
+        <display-span>31</display-span>
+        <option>top</option>
+        <option>notext</option>
+        <major-divisions>20</major-divisions>
+        <minor-divisions>0</minor-divisions>
+        <tick-bottom>true</tick-bottom>
+        <tick-top>true</tick-top>
+        <tick-right>false</tick-right>
+        <tick-left>false</tick-left>
+        <cap-bottom>false</cap-bottom>
+        <cap-top>false</cap-top>
+        <cap-right>true</cap-right>
+        <cap-left>true</cap-left>
+        <marker-offset>0</marker-offset>
+        <enable-pointer>false</enable-pointer>
+        <pointer-type>fixed</pointer-type>
+        <tick-type>line</tick-type>
+        <tick-length>variable</tick-length>
+    </tape>
+
+
+
+
+
 
 
 
@@ -1187,8 +1303,8 @@
 
     <label>
         <name>glide-slope miles</name>
-        <x>65</x>
-        <y>-80</y>
+        <x>55</x>
+        <y>-86</y>
         <width>1</width>
         <height>1</height>
         <condition>
@@ -1216,8 +1332,8 @@
 
     <label>
         <name>glide-slope miles NM</name>
-        <x>75</x>
-        <y>-80</y>
+        <x>66</x>
+        <y>-86</y>
         <width>1</width>
         <height>1</height>
         <condition>

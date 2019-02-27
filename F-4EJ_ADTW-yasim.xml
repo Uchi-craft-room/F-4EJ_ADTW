@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  F-4EJ_ADTW - 2017 - Hitoshi Uchida
+  F-4EJ_ADTW - 2019 - Hitoshi Uchida
 
   Wingspan     : 11.7m    ( ft )
   lenght       : 19.2m    ( ft )
@@ -15,9 +15,9 @@
 
 <airplane mass="28000">
 
-  <approach speed="140" aoa="19" fuel="0.6">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.5"/>
+  <approach speed="150" aoa="9" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/flight/flaps"               value="1.0"/>
     <control-setting axis="/controls/gear/gear-down"             value="1.0"/>
   </approach>
@@ -48,7 +48,7 @@
       incidence = "-1.0"
           sweep ="45.0"
           twist=  "0.0">
-    <stall aoa="25" width="2" peak="1.0"/>
+    <stall aoa="27" width="2" peak="1.0"/>
     <flap0   start="0.0" end="0.5" lift="1.5" drag="1.5"/>
     <flap1   start="0.5" end="1.0" lift="1.2" drag="1.5"/>
     <slat    start="0.5" end="1.0" lift="1.0" drag="1.2" aoa="1.0"/>
@@ -212,8 +212,8 @@
   <gear x="-1.0" y="2.75" z="-1.85"
         retract-time = "3"
          compression = "0.3"
-              spring = "0.3"
-                damp = "1"
+              spring = "0.5"
+                damp = "0.8"
         initial-load = "0"
                sfric = "0.8">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
@@ -226,8 +226,8 @@
   <gear x="-1.0" y="-2.75" z="-1.85"
         retract-time = "3"
          compression = "0.3"
-              spring = "0.3"
-                damp = "1"
+              spring = "0.5"
+                damp = "0.8"
         initial-load = "0"
                sfric = "0.8">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
