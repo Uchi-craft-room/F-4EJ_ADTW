@@ -15,7 +15,7 @@
 
 <airplane mass="28000">
 
-  <approach speed="150" aoa="9" fuel="0.8">
+  <approach speed="150" aoa="11" fuel="0.8">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/flight/flaps"               value="1.0"/>

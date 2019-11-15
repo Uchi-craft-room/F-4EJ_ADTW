@@ -178,15 +178,15 @@
     <type>select</type>
     <object-name>DRAGCHUTE</object-name>
     <condition>
-          <property>/sim/model/dragchute/enable</property>
-          <property>/sim/model/dragchute/position-norm</property>
+          <property>sim/model/dragchute/enable</property>
+          <property>sim/model/dragchute/position-norm</property>
     </condition>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>DRAGCHUTE</object-name>
-    <property>/sim/model/dragchute/force</property>
+    <property>sim/model/dragchute/force</property>
     <interpolation>
       <entry><ind>  0.00 </ind><dep>10.0 </dep></entry>
       <entry><ind>  0.2 </ind><dep>  8.0 </dep></entry>
@@ -208,7 +208,7 @@
   <animation>
     <type>rotate</type>
     <object-name>fuselage-cap</object-name>
-    <property>/sim/model/dragchute/position-norm</property>
+    <property>sim/model/dragchute/position-norm</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep> 0 </dep></entry>
       <entry><ind>  0.1  </ind><dep> 90 </dep></entry>
@@ -587,7 +587,7 @@
     <object-name>stabilator</object-name>
     <object-name>stabilator-slat</object-name>
     <object-name>stabilator-titan</object-name>
-    <property>/surface-positions/elevator-pos-norm</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <interpolation>
       <entry><ind> -1.00 </ind><dep> -21.0 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
@@ -611,7 +611,7 @@
   <animation>
     <type>rotate</type>
     <object-name>rudder</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <interpolation>
       <entry><ind>  1.00 </ind><dep> 30.0 </dep></entry>
       <entry><ind>  0.00 </ind><dep>  0.0 </dep></entry>
@@ -633,7 +633,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileron-LH</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
       <entry><ind> -1.0 </ind><dep>  1.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -652,7 +652,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileron-RH</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <interpolation>
       <entry><ind> -1.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -672,7 +672,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileron-LH</object-name>
-     <property>/surface-positions/flap-pos-norm</property>
+     <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind>  1.0 </ind><dep>-5.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -690,7 +690,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileron-RH</object-name>
-     <property>/surface-positions/flap-pos-norm</property>
+     <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind>  1.0 </ind><dep> 5.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -710,7 +710,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoiler-LH</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
       <entry><ind> -1.0 </ind><dep> 45.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -729,7 +729,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoiler-RH</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <interpolation>
       <entry><ind> -1.0 </ind><dep>-45.0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
@@ -749,7 +749,7 @@
   <animation>
     <type>rotate</type>
     <object-name>flap-LH</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>-60</factor>
     <axis>
       <x1-m>  1.670 </x1-m>
@@ -764,7 +764,7 @@
   <animation>
     <type>rotate</type>
     <object-name>flap-RH</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor> 60</factor>
     <axis>
       <x1-m>  1.670 </x1-m>
@@ -781,7 +781,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat-middle-LH</object-name>
-  <property>/surface-positions/left-slat-pos-norm</property>
+  <property>surface-positions/left-slat-pos-norm</property>
   <factor>50</factor>
     <axis>
       <x1-m> -1.127 </x1-m>
@@ -796,7 +796,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat-middle-RH</object-name>
-  <property>/surface-positions/right-slat-pos-norm</property>
+  <property>surface-positions/right-slat-pos-norm</property>
   <factor>-50</factor>
     <axis>
       <x1-m> -1.127 </x1-m>
@@ -811,7 +811,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat-outer-LH</object-name>
-  <property>/surface-positions/left-slat-pos-norm</property>
+  <property>surface-positions/left-slat-pos-norm</property>
   <interpolation>
    <entry> <ind>0.0</ind> <dep>0</dep> </entry>
    <entry> <ind>0.5</ind> <dep>50</dep> </entry>
@@ -830,7 +830,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat-outer-RH</object-name>
-  <property>/surface-positions/right-slat-pos-norm</property>
+  <property>surface-positions/right-slat-pos-norm</property>
   <interpolation>
    <entry> <ind>0.0</ind> <dep>0</dep> </entry>
    <entry> <ind>0.5</ind> <dep>-50</dep> </entry>
@@ -850,7 +850,7 @@
  <animation>
   <type>rotate</type>
   <object-name>speedbrake-LH</object-name>
-  <property>/surface-positions/speedbrake-pos-norm</property>
+  <property>surface-positions/speedbrake-pos-norm</property>
   <factor>-40</factor>
     <axis>
       <x1-m>  0.809 </x1-m>
@@ -865,7 +865,7 @@
  <animation>
   <type>rotate</type>
   <object-name>speedbrake-RH</object-name>
-  <property>/surface-positions/speedbrake-pos-norm</property>
+  <property>surface-positions/speedbrake-pos-norm</property>
   <factor>40</factor>
     <axis>
       <x1-m>  0.809 </x1-m>
@@ -881,7 +881,7 @@
  <animation>
   <type>rotate</type>
   <object-name>sub-intake-LH</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <interpolation>
    <entry> <ind>0.0</ind> <dep>0</dep> </entry>
    <entry> <ind>0.5</ind> <dep>0</dep> </entry>
@@ -900,7 +900,7 @@
  <animation>
   <type>rotate</type>
   <object-name>sub-intake-RH</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <interpolation>
    <entry> <ind>0.0</ind> <dep>0</dep> </entry>
    <entry> <ind>0.5</ind> <dep>0</dep> </entry>
@@ -1773,18 +1773,18 @@
    <model>
     <path>Aircraft/F-4EJ_ADTW/Models/Effects/splash/right-splash.xml</path>
     <offsets>
-      <x1-m>  1.000 </x1-m>
-      <y1-m>  2.800 </y1-m>
-      <z1-m> -1.600 </z1-m>
+      <x-m>  1.000 </x-m>
+      <y-m>  2.800 </y-m>
+      <z-m> -1.600 </z-m>
     </offsets>
   </model>
 
    <model>
     <path>Aircraft/F-4EJ_ADTW/Models/Effects/splash/left-splash.xml</path>
     <offsets>
-      <x1-m>  1.000 </x1-m>
-      <y1-m> -2.800 </y1-m>
-      <z1-m> -1.600 </z1-m>
+      <x-m>  1.000 </x-m>
+      <y-m> -2.800 </y-m>
+      <z-m> -1.600 </z-m>
     </offsets>
   </model>
 
@@ -1796,6 +1796,51 @@
       <z-m> -1.677 </z-m>
     </offsets>
   </model>
+
+
+
+
+   <model>
+    <name>TireSmokeRight</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/effects/tiresmoke/tiresmoke.xml</path>
+    <offsets>
+      <x-m>  1.000 </x-m>
+      <y-m>  2.800 </y-m>
+      <z-m> -1.600 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TireSmokeRight</object-name>
+      <condition>
+	<greater-than>
+          <property>/gear/gear[1]/compression-m</property>
+	  <value>0.1</value>
+	</greater-than>
+      </condition>
+  </animation>
+
+   <model>
+    <name>TireSmokeLeft</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/effects/tiresmoke/tiresmoke.xml</path>
+    <offsets>
+      <x-m>  1.000 </x-m>
+      <y-m> -2.800 </y-m>
+      <z-m> -1.600 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TireSmokeLeft</object-name>
+      <condition>
+	<greater-than>
+          <property>/gear/gear[0]/compression-m</property>
+	  <value>0.1</value>
+	</greater-than>
+      </condition>
+  </animation>
 
 
 
@@ -1892,7 +1937,7 @@
         <and>
           <property>controls/lighting/nav-lights</property>
           <not>
-          <property>/sim/model/dragchute/position-norm</property>
+          <property>sim/model/dragchute/position-norm</property>
           </not>
         </and>
     </condition>
@@ -2121,7 +2166,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LID</object-name>
-        <property>/controls/engines/engine[1]/starter-position-norm</property>
+        <property>controls/engines/engine[1]/starter-position-norm</property>
         <interpolation>
             <entry><ind>0</ind>  <dep>  0 </dep></entry>
             <entry><ind>0.9</ind><dep>  0 </dep></entry>

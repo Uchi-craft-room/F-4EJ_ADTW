@@ -1,6 +1,6 @@
 	　　　　GNU GENERAL PUBLIC LICENSE
              FlightGear Model F-4EJ ADTW
- Copyright (C) 2018 Uchi craft room / Hitoshi Uchida
+ Copyright (C) 2019 Uchi craft room / Hitoshi Uchida
                        
 one line to give the program's name and an idea of what it does.
 Copyright (C) yyyy  name of author
@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 (訳: 
              FlightGear Model F-4EJ ADTW
- Copyright (C) 2018 Uchi craft room / Hitoshi Uchida
+ Copyright (C) 2019 Uchi craft room / Hitoshi Uchida
 
 このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェ
 ア財団によって発行された GNU 一般公衆利用許諾契約書(バージョン2か、希
