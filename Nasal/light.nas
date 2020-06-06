@@ -34,4 +34,10 @@ strobe.interval = 0;
 setprop( "/instrumentation/nav[0]/ident", 0 );
 setprop( "/instrumentation/nav[1]/ident", 0 );
 
+#secondary-lights
+
+setlistener("/engines/engine[0]/n2",func{
+             interpolate("/sim/rendering/als-secondary-lights/use-taxi-light-ext",getprop("/controls/switches/taxi-lights")*getprop("/controls/gear/gear-down"),0)});
+setlistener("/engines/engine[0]/n2",func{
+             interpolate("/sim/rendering/als-secondary-lights/use-landing-light-ext",getprop("/controls/switches/landing-light")*getprop("/controls/gear/gear-down"),0)});
 

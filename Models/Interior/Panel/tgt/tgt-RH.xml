@@ -10,9 +10,9 @@
   <object-name>PointerTip</object-name>   
     <emission>
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
-      <red>   0.7 </red>
-      <green> 0.3 </green>
-      <blue>  0.3 </blue>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.0 </blue>
     </emission>
  </animation>
 

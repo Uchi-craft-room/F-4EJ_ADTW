@@ -17,9 +17,9 @@
     <object-name>compass</object-name>
     <emission>
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <red>   0.5 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
     </emission> 
   </animation>    
 

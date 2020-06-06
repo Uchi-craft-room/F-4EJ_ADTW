@@ -21,10 +21,9 @@
     <object-name>SW1.004</object-name>
    <type>material</type>
      <emission> 
-      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
-        <red>0.5</red>
-        <green>0.2</green>
-        <blue>0.2</blue>
+        <red>   0.5 </red>
+        <green> 0.2 </green>
+        <blue>  0.2 </blue>
       </emission>
   </animation>
 
@@ -110,9 +109,8 @@
     <object-name>SW1</object-name>
     <emission>
       <red>   0.5 </red>
-      <green> 0.2 </green>
-      <blue>  0.2 </blue>
-      <factor-prop>controls/electric/battery-switch</factor-prop>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
     </emission>
   </animation>
 

@@ -11,28 +11,40 @@
     </animation>
  
   <animation>
+     <type>material</type>
          <object-name>base</object-name>
          <object-name>tacan.pwr</object-name>
          <object-name>SW-X</object-name>
          <object-name>SW-Y</object-name>
          <object-name>chan.knob</object-name>
-         <object-name>chan.001</object-name>
-         <object-name>chan.002</object-name>
-         <object-name>chan.003</object-name>
-        <object-name>freq.001</object-name>
-        <object-name>freq.002</object-name>
-        <object-name>freq.003</object-name>
-        <object-name>freq.004</object-name>
-        <object-name>freq.005</object-name>
+
         <object-name>ils.vol</object-name>
      <object-name>freq-A.knob</object-name>
      <object-name>freq-B.knob</object-name>
-     <type>material</type>
      <emission> 
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
         <red>0.5</red>
         <green>0.2</green>
         <blue>0.2</blue>
+      </emission>
+  </animation> 
+
+
+  <animation>
+     <type>material</type>
+        <object-name>freq.001</object-name>
+        <object-name>freq.002</object-name>
+        <object-name>freq.003</object-name>
+        <object-name>freq.004</object-name>
+        <object-name>freq.005</object-name>
+         <object-name>chan.001</object-name>
+         <object-name>chan.002</object-name>
+         <object-name>chan.003</object-name>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.5</red>
+        <green>0.5</green>
+        <blue>0.0</blue>
       </emission>
   </animation> 
 

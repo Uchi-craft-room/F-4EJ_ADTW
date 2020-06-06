@@ -227,8 +227,8 @@
     <emission> 
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
         <red>0.5</red>
-        <green>0.3</green>
-        <blue>0.3</blue>
+        <green>0.2</green>
+        <blue>0.2</blue>
       </emission>
   </animation>
 
@@ -246,7 +246,7 @@
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
         <red>0.5</red>
         <green>0.5</green>
-        <blue>0.5</blue>
+        <blue>0.0</blue>
       </emission>
   </animation>
 

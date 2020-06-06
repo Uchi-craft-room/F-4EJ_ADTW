@@ -14,9 +14,10 @@
  <object-name>base</object-name>
     <object-name>position</object-name>
     <object-name>wing</object-name>
-    <object-name>flush</object-name>
+    <object-name>flash</object-name>
     <object-name>formation</object-name>
     <object-name>fus</object-name>
+    <object-name>knob</object-name>
    <type>material</type>
      <emission> 
       <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>

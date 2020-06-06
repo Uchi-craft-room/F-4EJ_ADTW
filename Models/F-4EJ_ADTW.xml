@@ -1911,7 +1911,27 @@
   </model>
 
   <model>
+  <name>NAV-left_prc</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Effects/lights/procedural_light_nav_left.xml</path>
+    <offsets>
+      <x-m>  2.550 </x-m>
+      <y-m> -5.800 </y-m>
+      <z-m>  0.150</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <path>Aircraft/F-4EJ_ADTW/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> 2.550 </x-m>
+      <y-m> 5.800 </y-m>
+      <z-m> 0.150</z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <name>NAV-right_prc</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Effects/lights/procedural_light_nav_right.xml</path>
     <offsets>
       <x-m> 2.550 </x-m>
       <y-m> 5.800 </y-m>
@@ -1930,14 +1950,35 @@
     </offsets>
   </model>
 
+  <model>
+  <name>Tail-Light_prc</name>
+<path>Aircraft/F-4EJ_ADTW/Models/Effects/lights/procedural_light_nav_tail.xml</path>
+    <offsets>
+      <x-m> 8.330 </x-m>
+      <y-m> 0.065 </y-m>
+      <z-m> 1.110 </z-m>
+	<heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+	<type>select</type>
+	<object-name>NAV-right_prc</object-name>
+	<object-name>NAV-left_prc</object-name>
+	<condition>
+		<property>controls/lighting/nav-lights</property>
+	</condition>
+  </animation>
+
   <animation>
     <type>select</type>
     <object-name>Tail-Light</object-name>
+    <object-name>Tail-Light_prc</object-name>
     <condition>
         <and>
           <property>controls/lighting/nav-lights</property>
           <not>
-          <property>sim/model/dragchute/position-norm</property>
+          	<property>sim/model/dragchute/position-norm</property>
           </not>
         </and>
     </condition>
@@ -2061,9 +2102,20 @@
     </offsets>
   </model>
 
+  <model>
+    <name>LAND_Light_prc</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Effects/lights/procedural_light_nav_tail.xml</path>
+    <offsets>
+      <x-m> -6.650 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -0.850 </z-m>
+    </offsets>
+  </model>
+
   <animation>
     <type>select</type>
     <object-name>LAND_Light</object-name>
+    <object-name>LAND_Light_prc</object-name>
     <condition>
         <and>
         <equals>
@@ -2093,9 +2145,22 @@
     </offsets>
   </model>
 
+  <model>
+    <name>TAXI_Light_prc</name>
+    <path>Aircraft/F-4EJ_ADTW/Models/Effects/lights/procedural_light_nav_tail.xml</path>
+    <offsets>
+      <x-m> -6.750 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -0.700 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
   <animation>
     <type>select</type>
     <object-name>TAXI_Light</object-name>
+    <object-name>TAXI_Light_prc</object-name>
     <condition>
         <and>
         <equals>

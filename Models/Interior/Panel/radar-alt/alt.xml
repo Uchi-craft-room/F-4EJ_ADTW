@@ -7,24 +7,24 @@
 
   <animation>
     <type>material</type>
-    <object-name>ALTface</object-name>
     <object-name>InhgKnob</object-name>
     <emission>
      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
-      <red>   0.70 </red>
-      <green> 0.30 </green>
-      <blue>  0.30 </blue>
+      <red>   0.5 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
     </emission>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>needle</object-name>
+    <object-name>ALTface</object-name>
     <emission>
      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
-      <red>   0.70 </red>
-      <green> 0.30 </green>
-      <blue>  0.30 </blue>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.0 </blue>
     </emission>
   </animation>
 

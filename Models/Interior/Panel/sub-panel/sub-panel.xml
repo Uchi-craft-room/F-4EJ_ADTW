@@ -29,10 +29,12 @@
 	  <object-name>gear-up</object-name>
           <object-name>flaps-te</object-name>
           <object-name>flaps-le</object-name>
+          <object-name>flaps-te</object-name>
+          <object-name>flaps-dn</object-name>
 	  <emission>
-		  <red>   0.8 </red>
-		  <green> 0.7 </green>
-		  <blue>  0.5 </blue>
+		  <red>   0.5 </red>
+		  <green> 0.5 </green>
+		  <blue>  0 </blue>
 		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
 	  </emission>
   </animation>

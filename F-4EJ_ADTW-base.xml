@@ -156,6 +156,7 @@
     <F-4EJ_ADTW>
       <file>Aircraft/F-4EJ_ADTW/Nasal/electrical.nas</file>
       <file>Aircraft/F-4EJ_ADTW/Nasal/light.nas</file>
+      <file>Aircraft/F-4EJ_ADTW/Nasal/light-manager.nas</file>
       <file>Aircraft/F-4EJ_ADTW/Nasal/liveries.nas</file>
       <file>Aircraft/F-4EJ_ADTW/Nasal/immat.nas</file>
       <file>Aircraft/F-4EJ_ADTW/Nasal/instruments.nas</file>
